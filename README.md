@@ -64,7 +64,7 @@ Le document suit les cinq parties du template du cours : scénarios prévus, mé
 
 ### Scénarios
 
-11 scénarios de nouveautés, un parcours métier chacun, et 5 campagnes de non-régression qui réutilisent des cas déjà écrits.
+11 scénarios de nouveautés. Les scénarios 5 et 6 sont le même parcours, la récupération des données bancaires, coupé selon l'environnement de test. Les 5 campagnes de non-régression rejouent des cas du cahier. Le cas 53 n'est dans aucun de ces 11 scénarios.
 
 | Scénario | Parcours | Exigences | Criticité | Cas |
 |---|---|---|---|---|
@@ -82,7 +82,7 @@ Le document suit les cinq parties du template du cours : scénarios prévus, mé
 
 Total : 59 cas de nouveautés, plus le cas 53 réservé à la non-régression 5, soit 60 cas.
 
-La non-régression se joue une seule fois, au jalon J5, après la dernière livraison. Elle porte sur le critique et sur les points d'interface avec le projet de l'autre équipe : inscription jusqu'au tableau de bord, connexion avec cloisonnement des comptes, récupération des données bancaires, intégrité du tableau de bord après l'arrivée du projet tiers, cohérence des montants entre les écrans. Elle réutilise 20 cas, dont 17 distincts. Les non-régressions 1 à 3 sont automatisées et rejouées à chaque livraison dès le sprint 5.
+La non-régression se joue une seule fois, au jalon J5, après la dernière livraison. Elle porte sur le critique et sur les points d'interface avec le projet de l'autre équipe : inscription jusqu'au tableau de bord, connexion par mot de passe, second facteur ou biométrie (URL sans identifiant), récupération des données bancaires, intégrité du tableau de bord après l'arrivée du projet tiers (cloisonnement des comptes compris), cohérence des montants entre les écrans. Vingt emplacements, dix-sept cas distincts. Seize viennent des scénarios de nouveautés. Le cas 53 sert seulement à la non-régression 5. Les non-régressions 1 à 3 sont automatisées et rejouées à chaque livraison dès le sprint 5.
 
 ### Risques et couverture
 
